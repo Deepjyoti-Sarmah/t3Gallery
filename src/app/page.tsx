@@ -1,5 +1,7 @@
 import { db } from "../server/db/index";
 
+export const dynamic = "force-dynamic";
+
 const mockURL = [
     "https://utfs.io/f/2789cddd-c039-4d13-9872-f97ecfe7689f-ja6c04.com_death-stranding-fanart-4k_3625x2160.jpg",
     "https://utfs.io/f/2e6bf210-49e4-49bf-84c4-311747a041f5-3mczkm.jpg",
