@@ -1,7 +1,6 @@
 import "server-only";
 import { db } from "../server/db/index";
 import { auth } from "@clerk/nextjs/server";
-import { use } from "react";
 
 export async function getMyImages() {
 
@@ -12,7 +11,6 @@ export async function getMyImages() {
         where: (model, {eq}) => eq(model.userId, user.userId),
         orderBy: (model, {desc}) => desc(model.id),
     });
-    // console.log(images);
     return images
 }
 
