@@ -10,12 +10,6 @@ export default function TopNav() {
                     <SignInButton />
                 </SignedOut>
                 <SignedIn>
-                    {/* <UploadButton  */}
-                    {/*     endpoint="imageUploader" */}
-                    {/*     onClientUploadComplete={() => { */}
-                    {/*         router.refresh(); */}
-                    {/*     }} */}
-                    {/* /> */}
                     <SimpleUploadButton />
                     <UserButton />
                 </SignedIn>
