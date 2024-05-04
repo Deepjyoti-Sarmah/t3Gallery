@@ -43,4 +43,10 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [x] Update upload button to be less cringe
 - [x] Analytics (posthog)
 - [x] Delete button (w/ Server Actions)
-- [] Ratelimiting (upstash)
+- [x] Ratelimiting (upstash)
+- [x] fix image namings 
+- [] fullscreen image view width fixing
+- [] fix the page layout for images of different resolution
+- [] "Selecting" images on the gallery page
+- [] "infinite scrolling"
+- [] folders/albums
