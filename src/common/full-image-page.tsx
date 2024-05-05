@@ -30,7 +30,6 @@ export default async function FullPageImageView(props: {id: number}) {
                     <form
                         action={async () => {
                             "use server";
-
                             await deleteImage(idAsNumber);
                         }}
                     >
