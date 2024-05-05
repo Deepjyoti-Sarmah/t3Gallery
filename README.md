@@ -45,8 +45,8 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [x] Delete button (w/ Server Actions)
 - [x] Ratelimiting (upstash)
 - [x] fix image namings 
-- [] fullscreen image view width fixing
-- [] fix the page layout for images of different resolution
+- [x] fullscreen image view width fixing
+- [x] fix the page layout for images of different resolution
 - [] "Selecting" images on the gallery page
 - [] "infinite scrolling"
 - [] folders/albums
