@@ -5,7 +5,6 @@ import { images } from "./db/schema";
 import { and, eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import analyticsServerClinet from "./analytics";
-import { aw } from "node_modules/@upstash/redis/zmscore-4382faf4";
 
 export async function getMyImages() {
 
