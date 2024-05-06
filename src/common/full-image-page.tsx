@@ -11,7 +11,7 @@ export default async function FullPageImageView(props: {id: number}) {
 
     return (
         <div className="flex h-full">
-            <div className="w-2/3 flex items-center justify-center ">
+            <div className="w-2/3 flex items-center justify-center border-r ">
                 <img src={image.url} className="max-h-full max-w-full object-contain" alt={image.name} />
             </div>
             <div className="w-1/3 flex flex-col text-gray-200">
@@ -26,7 +26,7 @@ export default async function FullPageImageView(props: {id: number}) {
                     <span className="p-1">Created On: </span>
                     <span className="p-1">{new Date(image.createdAt).toLocaleDateString()}</span>
                 </div>
-                <div className="flex flex-col items-center justify-center p-2 mt-auto">
+                <div className="flex flex-col items-center justify-center p-2 mt-auto border-t">
                     <form
                         action={async () => {
                             "use server";
