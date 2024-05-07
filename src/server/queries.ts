@@ -7,7 +7,6 @@ import { redirect } from "next/navigation";
 import analyticsServerClinet from "./analytics";
 
 export async function getMyImages() {
-
     const user = auth();
     if (!user.userId) throw new Error("Unauthorized");
 
@@ -19,7 +18,6 @@ export async function getMyImages() {
 }
 
 export async function getImage(id: number) {
-
     const user = auth();
     if (!user.userId) throw new Error("Unauthorized");
 
