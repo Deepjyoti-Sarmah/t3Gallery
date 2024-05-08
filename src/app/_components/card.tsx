@@ -2,13 +2,13 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 
-interface Card {
+export interface Image {
     id: number,
     url: string,
     name: string
 }
 
-const Card = ({id, url, name}: Card) => {
+const Card = ({id, url, name}: Image) => {
   return (
         <div key={id} className="flex flex-col items-center justify-center bg-slate-900/90 shadow-lg rounded-l g p-2">
             <Link href={`/img/${id}`}>
