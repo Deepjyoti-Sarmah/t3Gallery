@@ -6,17 +6,17 @@ import InfiniteScrollImages from "./_components/infiniteScrollImages";
 
 export const dynamic = "force-dynamic";
 
-// async function Images() {
-//     const images = await getMyImages();
+async function Images() {
+    const images = await getMyImages();
 
-//     return ( 
-//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-2"> 
-//             {[...images, ...images, ...images].map((image) => (
-//                 <Card id={image.id} url={image.url} name={image.name}/>
-//             ))}
-//         </div>
-//     );
-// }
+    return ( 
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-2"> 
+            {[...images, ...images, ...images].map((image) => (
+                <Card id={image.id} url={image.url} name={image.name}/>
+            ))}
+        </div>
+    );
+}
 
 export default async function HomePage() {
     return (
@@ -25,8 +25,8 @@ export default async function HomePage() {
                 <div className="h-full w-full text-2xl text-center">Please sign in above</div>
             </SignedOut>
             <SignedIn>
-                {/* <Images /> */}
-                <InfiniteScrollImages />
+                <Images />
+                {/* <InfiniteScrollImages /> */}
             </SignedIn>
         </main>
     );
