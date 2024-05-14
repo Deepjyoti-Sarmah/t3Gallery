@@ -11,7 +11,7 @@ async function Images() {
 
     return ( 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-2"> 
-            {[...images, ...images, ...images].map((image) => (
+            {images.map((image) => (
                 <Card id={image.id} url={image.url} name={image.name}/>
             ))}
         </div>
