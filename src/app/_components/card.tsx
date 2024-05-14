@@ -10,7 +10,7 @@ export interface Image {
 
 const Card = ({id, url, name}: Image) => {
   return (
-        <div key={id} className="flex flex-col items-center justify-center bg-slate-900/90 shadow-lg rounded-l g p-2">
+        <div key={id} className="flex flex-col items-center justify-center border border-slate-800 bg-slate-950/90 shadow-lg rounded-lg p-2">
             <Link href={`/img/${id}`}>
                 <div className=" w-48 h-48 relative ">
                     <Image 
@@ -22,7 +22,7 @@ const Card = ({id, url, name}: Image) => {
                     />
                 </div>
             </Link>
-            <div className="p-1 font-thin text-slate-50 text-center">
+            <div className="p-1 font-thin text-slate-400 text-center">
                 <span>{name.length > 15 ? (name).slice(0,15)+"..." : (name)}</span>
             </div>
         </div>
